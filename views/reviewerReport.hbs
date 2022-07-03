@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css">
+        </head>
+    <body>
+
+        <nav>
+            <h4>CPMS</h4>
+
+            <ul>
+                <li><a href="/reviewerBridge">Home</a></li>
+                <li><a href="/reviewSummaryReport">Review summary report</a></li>
+                <li><a href="/authorReport">Author report</a></li>
+                <li><a href="/reviewerReport">Reviewer report</a></li>
+                <li><a href="/reviewersCommentReport">Reviewer comment report</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </nav>
+
+      
+        <h1>Author Report</h1>
+        
+        <table> 
+            <thread>
+                <tr>
+                    <th>LastName</th>
+                    <th>FirstName</th>
+                    <th>MiddleInitial</th>
+                    <th>Affiliation</th>
+                    <th>Department</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>ZipCode</th>
+                    <th>PhoneNumber</th>
+                    <th>EmailAddress</th>
+                </tr>
+            </thread>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td>{{this.LastName}}</td>
+                    <td>{{this.FirstName}}</td>
+                    <td>{{this.MiddleInitial}}</td>
+                    <td>{{this.Affiliation}}</td>
+                    <td>{{this.Department}}</td>
+                    <td>{{this.Address}}</td>
+                    <td>{{this.City}}</td>
+                    <td>{{this.State}}</td>
+                    <td>{{this.Zipcode}}</td>
+                    <td>{{this.PhoneNumber}}</td>
+                    <td>{{this.EmailAddress}}</td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    <br>
+        
+            
+        <footer>
+            <div class="footer-bottom">
+                <p>Copyright &copy; OrionTech.</p>
+            </div>
+
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h4>CPMS</h4>
+        <ul>
+            <li><a href="/reviewerBridge">Home</a></li>
+            <li><a href="/reviewerRegistration">Reviewer Register</a></li>
+            <li><a href="/paperReview">Paper Review</a></li>
+            <li><a href="/reviewerAccount">Account</a></li>
+            <li><a href="/reportPage">Papers to Review</a></li>
+            <li><a href="/">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                Reviewer Register Form
+            </div>
+            <div class="card-body">
+                <form action="/auth/reviewerRegistration" method="POST">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" name= "firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="middleinitial">Middle Initial</label>
+                        <input type="text" class="form-control" id="middleinitial" name= "middleinitial">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name= "lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="affiliation">Affiliation</label>
+                        <input type="text" class="form-control" id="affiliation" name= "affiliation">
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <input type="text" class="form-control" id="department" name= "department">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" name= "address">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name= "city">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" name= "state">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">ZipCode</label>
+                        <input type="text" class="form-control" id="zipcode" name= "zipcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="text" class="form-control" id="phonenumber" name= "phonenumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailaddress">Email Address</label>
+                        <input type="email" class="form-control" id="emailaddress" name="emailaddress">
+                    </div>
+
+                    <hr>
+                    <div class="card-body">
+                        <h5>Please select the topics in which you are knowledgeable and/or interested. </h5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="AnalysisOfAlgorithms" value="1" name= "AnalysisOfAlgorithms">
+                        <label class="form-check-label" for="AnalysisOfAlgorithms">Analysis Of Algorithms</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Applications" value="1" name= "Applications">
+                        <label class="form-check-label" for="Applications">Applications</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Architecture" value="1" name="Architecture">
+                        <label class="form-check-label" for="Architecture">Architecture</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ArtificialIntelligence" value="1" name="ArtificialIntelligence">
+                        <label class="form-check-label" for="ArtificialIntelligence">Artificial Intelligence</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ComputerEngineering" value="1" name="ComputerEngineering">
+                        <label class="form-check-label" for="ComputerEngineering">Computer Engineering</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Curriculum" value="1" name="Curriculum">
+                        <label class="form-check-label" for="Curriculum">Curriculum</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="DataStructures" value="1" name="DataStructures">
+                        <label class="form-check-label" for="DataStructures">Data Structures</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Databases" value="1" name="Databases">
+                        <label class="form-check-label" for="Databases">Databases</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="DistanceLearning" value="1" name="DistanceLearning">
+                        <label class="form-check-label" for="DistanceLearning">Distance Learning</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="EthicalSocietalIssues" value="1" name="EthicalSocietalIssues">
+                        <label class="form-check-label" for="EthicalSocietalIssues">Ethical Societal Issues</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="FirstYearComputing" value="1" name="FirstYearComputing">
+                        <label class="form-check-label" for="FirstYearComputing">First Year Computing</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="GenderIssues" value="1" name="GenderIssues">
+                        <label class="form-check-label" for="GenderIssues">Gender Issues</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="GrantWriting" value="1" name="GrantWriting">
+                        <label class="form-check-label" for="GrantWriting">Grant Writing</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="GraphicsImageProcessing" value="1" name="GraphicsImageProcessing">
+                        <label class="form-check-label" for="GraphicsImageProcessing">Graphics Image Processing</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="HumanComputerInteraction" value="1" name="HumanComputerInteraction">
+                        <label class="form-check-label" for="HumanComputerInteraction">Human Computer Interaction</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="LaboratoryEnvironments" value="1" name="LaboratoryEnvironments">
+                        <label class="form-check-label" for="LaboratoryEnvironments">Laboratory Environments</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Literacy" value="Literacy" name="Literacy">
+                        <label class="form-check-label" for="Literacy">Literacy</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="MathematicsInComputing" value="1" name="MathematicsInComputing">
+                        <label class="form-check-label" for="MathematicsInComputing">Mathematics In Computing</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Multimedia" value="1" name="Multimedia">
+                        <label class="form-check-label" for="Multimedia">Multimedia</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="NetworkingDataCommunications" value="1" name="NetworkingDataCommunications">
+                        <label class="form-check-label" for="NetworkingDataCommunications">Networking Data Communications</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="NonMajorCourses" value="1" name="NonMajorCourses">
+                        <label class="form-check-label" for="NonMajorCourses">Non Major Courses</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ObjectOrientedIssues" value="1" name="ObjectOrientedIssues">
+                        <label class="form-check-label" for="ObjectOrientedIssues">Object Oriented Issues</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="OperatingSystems" value="1" name="OperatingSystems">
+                        <label class="form-check-label" for="OperatingSystems">Operating Systems</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ParallelsProcessing" value="1" name="ParallelsProcessing">
+                        <label class="form-check-label" for="ParallelsProcessing">Parallels Processing</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Pedagogy" value="1" name="Pedagogy">
+                        <label class="form-check-label" for="Pedagogy">Pedagogy</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ProgrammingLanguages" value="1" name="ProgrammingLanguages">
+                        <label class="form-check-label" for="ProgrammingLanguages">Programming Languages</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Research" value="1" name="Research">
+                        <label class="form-check-label" for="Research">Research</label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Security" value="1" name="Security">
+                        <label class="form-check-label" for="Security">Security</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="SoftwareEngineering" value="1" name="SoftwareEngineering">
+                        <label class="form-check-label" for="SoftwareEngineering">Software Engineering</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="SystemsAnalysisAndDesign" value="1" name="SystemsAnalysisAndDesign">
+                        <label class="form-check-label" for="SystemsAnalysisAndDesign">Systems Analysis And Design</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="UsingTechnologyInTheClassroom" value="1" name="UsingTechnologyInTheClassroom">
+                        <label class="form-check-label" for="UsingTechnologyInTheClassroom">Using Technology In The Classroom</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="WebAndInternetProgramming" value="1" name="WebAndInternetProgramming">
+                        <label class="form-check-label" for="WebAndInternetProgramming">Web And Internet Programming</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="Other" value="1" name="Other">
+                        <label class="form-check-label" for="Other">Other</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="OtherDescription">Other Description</label>
+                        <input type="text" class="form-control" id="OtherDescription" name="OtherDescription" placeholder="Please Describe...">
+                    </div>
+                    <hr>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="ReviewsAcknowledged" value="1" name="ReviewsAcknowledged">
+                        <label class="form-check-label" for="ReviewsAcknowledged">I agree to the CMPS Terms of Service and Private Policy</label>
+                    </div><br><br>
+                                        
+                    <button type="submit" class="btn btn-primary">Register reviewer</button>
+                </form>
+            </div>
+        </div>
+        {{#if message}}
+            <h6 class= "alert alert-danger mt-4">{{message}}</h6>
+        {{/if}} 
+    </div>
+
+    <br>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>Copyright &copy; OrionTech.</p>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>
